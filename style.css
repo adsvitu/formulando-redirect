@@ -168,6 +168,16 @@ h1 .vagas-highlight {
   display: inline-block;
 }
 
+h1 .seduc-highlight {
+  background: #fef08a;
+  color: #854d0e;
+  -webkit-text-fill-color: initial;
+  padding: 2px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  border: 1px solid rgba(234, 179, 8, 0.4);
+}
+
 .subtitle {
   text-align: center;
   font-size: 15px;

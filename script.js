@@ -33,8 +33,8 @@ document.getElementById('cta3')?.addEventListener('click', fireLead);
 (function () {
   const TOTAL_SECONDS = 60;
   const WINDOW_MS = 6 * 60 * 60 * 1000; // 6 horas
-  const KEY = 'prof_seedf_timer_v1';
-  const EXPIRED_MSG = "⚡Materiais enviados 1 hora antes da aula⚡! Garanta sua vaga no grupo abaixo 👇";
+  const KEY = 'prof_seedf_timer_v2';
+  const EXPIRED_MSG = "⚡ Materiais enviados 1 hora antes da aula⚡! Garanta sua vaga no grupo abaixo 👇";
 
   const box = document.getElementById('cd-box');
   const timeEl = document.getElementById('cd-time');

@@ -6,17 +6,19 @@ function fireLead() {
 }
 
 document.getElementById('cta')?.addEventListener('click', fireLead);
+document.getElementById('cta-seduc')?.addEventListener('click', fireLead);
 document.getElementById('cta2')?.addEventListener('click', fireLead);
+document.getElementById('cta3')?.addEventListener('click', fireLead);
 
 // Sticky CTA: Exibe o botão fixo no rodapé quando o CTA principal sai de vista
 (function () {
   const bar = document.getElementById('sticky-cta');
-  const cta = document.getElementById('cta');
+  const ctaContainer = document.getElementById('cta-container') || document.getElementById('cta');
 
-  if (!bar || !cta) return;
+  if (!bar || !ctaContainer) return;
 
   function updateSticky() {
-    const rect = cta.getBoundingClientRect();
+    const rect = ctaContainer.getBoundingClientRect();
     const isVisible = rect.top < (window.innerHeight - 60) && rect.bottom > 60;
     bar.classList.toggle('show', !isVisible);
   }
@@ -32,7 +34,7 @@ document.getElementById('cta2')?.addEventListener('click', fireLead);
   const TOTAL_SECONDS = 60;
   const WINDOW_MS = 6 * 60 * 60 * 1000; // 6 horas
   const KEY = 'prof_seedf_timer_v1';
-  const EXPIRED_MSG = "⚡ As aulas e materiais já começaram a ser liberados! Garanta sua vaga no grupo abaixo 👇";
+  const EXPIRED_MSG = "⚡Materiais enviados 1 hora antes da aula⚡! Garanta sua vaga no grupo abaixo 👇";
 
   const box = document.getElementById('cd-box');
   const timeEl = document.getElementById('cd-time');

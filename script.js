@@ -6,9 +6,7 @@ function fireLead() {
 }
 
 document.getElementById('cta')?.addEventListener('click', fireLead);
-document.getElementById('cta-seduc')?.addEventListener('click', fireLead);
 document.getElementById('cta2')?.addEventListener('click', fireLead);
-document.getElementById('cta3')?.addEventListener('click', fireLead);
 
 // Sticky CTA: Exibe o botão fixo no rodapé quando o CTA principal sai de vista
 (function () {
